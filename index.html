@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link liên kết thư viện -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- đầu trang -->
+    <div class="header">
+        <div id="content">
+            <div id="content-01">
+                <span>
+                    <i class="fas fa-user-check"></i>
+                    admin:
+                    <a href="http://fb.com/k1ne.profile">Nguyễn Trọng Kiên (K1ne)</a>
+                </span>
+            </div>
+            <div id="content-02">
+                <span>
+                    <a href="tel:0911609741">
+                        <i class="fas fa-mobile"></i>
+                        SĐT: 0911.609.741 (8 - 22h)
+                    </a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a href="./dk.html">
+                        <i class="fas fa-seedling"></i>
+                        Điều Khoản
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- thanh chuyển hướng <on way on top>-->
+    <div class="nav">
+        <div class="content" id="myHeader">
+            <ul>
+                <li id="nav-logo">
+                    <a href="./index.html"><img src="./images/logo1.png" alt="lỗi logo"></a>
+                </li>
+                <li id="nav-home">
+                    <a href="./index.html">
+                        <b>
+                            TRANG CHỦ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-nap-the">
+                    <a href="./napthe.html">
+                        <b>
+                            NẠP THẺ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-dich-vu">
+                    <a href="#1">
+                        <b>
+                            DỊCH VỤ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-btn">
+                    <button class="btn">
+                        <a href="./login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                            ĐĂNG NHẬP
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a href="./dangky.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            ĐĂNG KÝ
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+            }
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("header").style.fontSize = "15px";
+                } else {
+                    document.getElementById("header").style.fontSize = "10px";
+                }
+            }
+        </script>
+    </div>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="images" src="./images/baner0.png" alt="1">
+            </div>
+            <div class="carousel-item">
+                <img class="images" src="./images/baner1.jpg" alt="2">
+            </div>
+            <div class="carousel-item">
+                <img class="images" src="./images/baner2.jpg" alt="3">
+            </div>
+            <div class="carousel-item">
+                <img class="images" src="./images/baner1.jpg" alt="4">
+            </div>
+            <div class="carousel-item">
+                <img class="images" src="./images/baner2.jpg" alt="5">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="run-customer">
+        <marquee behavior="scroll" direction="">
+            <!-- 1 -->
+            <span class="name-user">
+                <i class="fa fa-star"></i>
+                <b>K1ne</b>
+            </span>
+            Vừa mua thành công
+            <b>#Tài Khoản có id: 000001 </b>
+            với giá 500,000 <sup>đ</sup>
+
+            -
+            <!-- 2 -->
+            <span class="name-user">
+                <i class="fa fa-star"></i>
+                <b>DCDuy**</b>
+            </span>
+            Vừa mua thành công
+            <b>#Tài Khoản có id: 000002 </b>
+            với giá 1,000,000 <sup>đ</sup>
+            -
+            <!-- 3 -->
+            <span class="name-user">
+                <i class="fa fa-star"></i>
+                <b>K1ne</b>
+            </span>
+            đã nạp thành công
+            <b>2,000,000 <sup>đ</sup></b>
+            vào tài khoản
+            -
+            <!-- 4 -->
+            <span class="name-user">
+                <i class="fa fa-star"></i>
+                <b>Mập***</b>
+            </span>
+            Vừa mua thành công
+            <b>#Tài Khoản có id: 000004 </b>
+            với giá 350,000 <sup>đ</sup>
+            -
+            <!-- 5 -->
+            <span class="name-user">
+                <i class="fa fa-star"></i>
+                <b>KimHoang</b>
+            </span>
+            Vừa mua thành công
+            <b>#Tài Khoản có id: 000005 </b>
+            với giá 6,000,000 <sup>đ</sup>
+        </marquee>
+    </div>
+
+    <div class="label">
+        <b id="#">
+            <h3>
+                CHỨC NĂNG
+            </h3>
+        </b>
+    </div>
+
+    <div class="line-center"></div>
+
+    <div class="function">
+        <ul>
+            <li>
+                <a href="#"><img src="./images/tai-khoan.jpg" alt=""></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/lsgd.jpg" alt=""></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/nap-atm.jpg" alt=""></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/nap-the.jpg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+    </script>
+
+    <div class="label" id="1">
+        <b id="#">
+            <h3>
+                DỊCH VỤ
+            </h3>
+        </b>
+    </div>
+
+    <div class="line-center-01"></div>
+
+    <div class="service" >
+        <div class="member">
+            <a href="./danhmuc-lmht.html"><img src="./images/image-08b7ee9b-9efe-4244-af27-3a4fd4aa16ab.gif" alt=""></a>
+            <span>
+                    DANH MỤC LIÊN MINH
+            </span>
+            <br><br><br>
+            <p>số tài khoản: 0</p>
+            <button class="service-btn">
+                <a style="text-decoration: none;color: white;" href="./danhmuc-lmht.html">
+                    Chọn
+                </a>
+            </button>
+        </div>
+
+        <div class="member">
+            <a href="./danhmuc-tocchien.html"><img src="./images/image-2eae8265-531f-4aa3-ae57-d5e847415ba0.gif" alt=""></a>
+            <span>
+                    DANH MỤC TỐC CHIẾN
+            </span>
+            <br><br><br>
+            <p>số tài khoản: 0</p>
+            <button class="service-btn">
+                <a style="text-decoration: none;color: white;" class="a" href="./danhmuc-tocchien.html">
+                    Chọn
+                </a>
+            </button>
+        </div>
+
+        <div class="member">
+            <a href="./danhmuc-lq.html"><img src="./images/image-d8eb6b70-2452-4305-8c2b-2bab63e295a3.gif" alt=""></a>
+            <span>
+                    DANH MỤC LIÊN QUÂN
+            </span>
+            <br><br><br>
+            <p>số tài khoản: 0</p>
+            <button class="service-btn">
+                <a style="text-decoration: none;color: white;" class="a" href="./danhmuc-lq.html">
+                    Chọn
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="label-2" style="margin-top: 100px;">
+        <b id="#">
+            <h3>
+                DỊCH VỤ CHẤT LƯỢNG
+            </h3>
+        </b>
+    </div>
+    <div class="line-center-02"></div>
+
+    <div class="img-product">
+        <ul>
+            <li>
+                <img src="./images/ft-1.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-2.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-3.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-4.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">   
+        <div id="ytplayer" style="visibility:visible;">
+            <img  width="350px" height="180px" src="./images/logo1.png" alt="">
+        </div>
+        <div id="my-address">
+            <b><h3>ABOUT<font style="color:#32c5d2;"> SHOP K1NE.COM</font></h3></b>
+            <span>Chuyên cung cấp software... an toàn. Tin cậy nhanh chóng. Giao dịch tự động 24/24</span>
+            <br><br>
+            <span id="lh">
+                <ul>
+                    <li>
+                        <a href="./dk.html">Điều khoản</a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/k1ne.profile">Facebook admin</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">Shop K1ne.com</a>
+                    </li>
+                </ul>
+
+            </span>
+        </div>
+        <div id="my-address">
+            <b><h3>CHÚNG TÔI Ở ĐÂY</h3></b>
+            <span>Chúng tôi làm việc một cách chuyên nghiệp, uy tín, nhanh chóng và luôn đặt quyền lợi của bạn lên hàng đầu</span>
+            <br><br>
+            <a href="tel:0911609741"><i class="fas fa-phone-volume"style="color: #32c5d2;"></i> Trọng Kiên 0911.609.741 (Chỉ SMS)</a><br>
+            <span><i class="fas fa-clock" style="color: #32c5d2;"></i> Làm việc từ 8h đến 21h hằng ngày</span>
+        </div>
+    </div>
+</body>
+</html>

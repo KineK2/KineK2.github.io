@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link liên kết thư viện -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- đầu trang -->
+    <div class="header">
+        <div id="content">
+            <div id="content-01">
+                <span>
+                    <i class="fas fa-user-check"></i>
+                    admin:
+                    <a href="http://fb.com/k1ne.profile">Nguyễn Trọng Kiên (K1ne)</a>
+                </span>
+            </div>
+            <div id="content-02">
+                <span>
+                    <a href="tel:0911609741">
+                        <i class="fas fa-mobile"></i>
+                        SĐT: 0911.609.741 (8 - 22h)
+                    </a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a href="./dk.html">
+                        <i class="fas fa-seedling"></i>
+                        Điều Khoản
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- thanh chuyển hướng <on way on top>-->
+    <div class="nav">
+        <div class="content" id="myHeader">
+            <ul>
+                <li id="nav-logo">
+                    <a href="./index.html"><img src="./images/logo1.png" alt="lỗi logo"></a>
+                </li>
+                <li id="nav-home">
+                    <a href="./index.html">
+                        <b>
+                            TRANG CHỦ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-nap-the">
+                    <a href="./napthe.html">
+                        <b>
+                            NẠP THẺ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-dich-vu">
+                    <a href="#1">
+                        <b>
+                            DỊCH VỤ
+                        </b>
+                    </a>
+                </li>
+                <li id="nav-btn">
+                    <button class="btn">
+                        <a href="./login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                            ĐĂNG NHẬP
+                        </a>
+                    </button>
+                    <button class="btn">
+                        <a href="./dangky.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            ĐĂNG KÝ
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            } else {
+            header.classList.remove("sticky");
+            }
+        }
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "15px";
+            } else {
+                document.getElementById("header").style.fontSize = "10px";
+            }
+        }
+    </script>
+    <div class="center">
+        <h4>HỆ THỐNG ĐĂNG KÝ</h4>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Tài khoản</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Mật khẩu</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Xác nhận mật khẩu</label>
+          </div>
+          
+          <div>
+            <input type="submit" value="Đăng Ký">
+          </div>
+          <div style="margin-top: 10px; margin-bottom: 20px;">
+            <input type="submit" value="Đăng Nhập">
+          </div>
+          
+          
+        </form>
+    </div>
+
+    <div class="label-2" style="margin-top: 50px;">
+        <b id="#">
+            <h3>
+                DỊCH VỤ CHẤT LƯỢNG
+            </h3>
+        </b>
+    </div>
+    <div class="line-center-02"></div>
+
+    <div class="img-product">
+        <ul>
+            <li>
+                <img src="./images/ft-1.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-2.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-3.png" alt="">
+            </li>
+            <li>
+                <img src="./images/ft-4.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">   
+        <div id="ytplayer" style="visibility:visible;">
+            <img  width="350px" height="180px" src="./images/logo1.png" alt="">
+        </div>
+        <div id="my-address">
+            <b><h3>ABOUT<font style="color:#32c5d2;"> SHOP K1NE.COM</font></h3></b>
+            <span>Chuyên cung cấp software... an toàn. Tin cậy nhanh chóng. Giao dịch tự động 24/24</span>
+            <br><br>
+            <span id="lh">
+                <ul>
+                    <li>
+                        <a href="./dk.html">Điều khoản</a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/k1ne.profile">Facebook admin</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">Shop K1ne.com</a>
+                    </li>
+                </ul>
+
+            </span>
+        </div>
+        <div id="my-address">
+            <b><h3>CHÚNG TÔI Ở ĐÂY</h3></b>
+            <span>Chúng tôi làm việc một cách chuyên nghiệp, uy tín, nhanh chóng và luôn đặt quyền lợi của bạn lên hàng đầu</span>
+            <br><br>
+            <a href="tel:0911609741"><i class="fas fa-phone-volume"style="color: #32c5d2;"></i> Trọng Kiên 0911.609.741 (Chỉ SMS)</a><br>
+            <span><i class="fas fa-clock" style="color: #32c5d2;"></i> Làm việc từ 8h đến 21h hằng ngày</span>
+        </div>
+    </div>
+</body>
+</html>
