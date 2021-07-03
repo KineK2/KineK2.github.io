@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;    
+}
+body{
+    max-width: 1920px;
+    a:hover{
+        text-decoration: none;
+    }
+    .header{
+        clear: both;
+        height: 30px;
+        background-color: #1f272eee;
+        border-bottom: 1px solid #6e7a8a69;
+        #contact{
+            opacity: 0.75;
+            width: 80%;
+            margin-left: 10%;
+            #contact-01{
+                float: left;
+            }
+            #contact-02{
+                float: right;
+            }
+            #contact-02 span, #contact-01 span{
+                line-height: 30px;
+                font-size: 15px;
+                color:#8797ae;
+                opacity: 5;
+            }
+            #contact-02 span a, #contact-01 span a{
+                line-height: 30px;
+                font-size: 15px;
+                color:#8797ae;
+                opacity: 5;
+            }
+            #contact-02 span a:hover, #contact-01 span a:hover{
+                transition: ease-in 0.25s;
+                -moz-transition: ease-in 0.25s;
+                -webkit-transition: ease-in 0.25s;
+                color:#32c5d2;
+            }
+        } 
+    }
+    .nav{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transform: none;
+        background-color: #1f272eee;
+        height: 100px;
+        font-size: 17px;
+        clear: both;
+        transition: 0.5s;
+        #nav-logo {
+            margin-left: 100px;
+            img{   
+                width: 180px;
+                height: 50px;
+            }
+        }
+        ul{
+            li{
+                line-height: 100px;
+                display: inline-block;
+                padding: 0px 50px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    transition: ease-in 0.25s;
+                    -moz-transition: ease-in 0.25s;
+                    -webkit-transition: ease-in 0.25s;
+                    color:#32c5d2;
+                }
+                .btn{
+                    width: 150px;
+                    padding: 5px 0px;
+                    font-size: small;
+                    border-radius: 15px;
+                    border: 1px solid #f1f1f1;
+                    color: white;
+                    background-color: none;
+                }
+                .btn:hover{
+                    color: #333;
+                    border: 1px solid #f1f1f1;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+#baner{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    img{
+        height: 300px;
+    }
+}
+.test{
+    height: 900px;
+    background-color: antiquewhite;
+}
+.run-customer{
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    marquee{
+
+        .name-user{
+            padding: 3px 5px;
+            border: 1px solid aqua;
+            border-radius: 5px;
+            background-color: aqua;
+            color: white;
+        }
+    }
+}
+.label{
+    margin: 20px;
+    text-align: center;
+    clear: both;
+    .line-center{
+        width: 5%;
+        height: 3px;
+        margin-left: 47.9%;
+        background-color: #32c5d2;
+        margin-bottom: 50px;
+    }
+}
+.menu-function{
+    margin-left: 7%;
+    margin-right: 7%;
+    clear: both;
+    ul{
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 10px;
+            img{
+                width: 300px;
+                height: 300px;
+                opacity: 0.75;
+            }
+            img:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+.menu-service{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+    margin-bottom: 100px;
+    .member{
+        float: left;
+        background-color: white;
+        width: 250px;
+        height: 350px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        text-align-last: center;
+        margin-right: 10px;
+        img{
+            border-radius: 5px;
+            width: 247px;
+            height: 180px;
+            padding: 1px;
+        }
+        span{
+            color: #f7b03c;
+            font-weight: bold;
+        }
+        p{
+            opacity: 0.75;
+        }
+        .service-btn{
+            font-size: medium;
+            text-align: center;
+            width: 150px;
+            padding: 5px 0;
+            border: 1px solid #ff6b57;
+            background-color: #ff6b57 ;
+            border-radius: 20px;
+            outline: none !important;
+            color: #ffff;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .service-btn:hover{
+            outline: none;
+            border-radius: 20px;
+            background-color:#ff472e;
+            }
+    }
+    .member:hover{
+        box-shadow: 0 0 5px #333;
+        transition: ease-in 0.15s;
+        -moz-transition: ease-in 0.15s;
+        -webkit-transition: ease-in 0.15s;
+    }
+}
+.img-product{
+    padding-top: 0px;
+    height: 200px;
+    width: 100%;
+    text-align-last: center;
+    ul{
+        li{
+            display: inline-block;
+            img{
+                width: 350px;
+            }
+        }
+    }
+}
+
+.footer{
+    height: 300px;
+    background-color: #1f272eee;
+    clear: both;
+    #logo{
+        padding: 50px;
+        float: left;
+    }
+    #my-address{
+        width: 450px;
+        height: 250px;
+        float: left;
+        margin: 50px 30px 0 50px;
+        a{
+            color:#8797ae;
+            text-decoration: none;
+        }
+        b{
+            color: white;
+        }
+        h3{
+            font-size: 20px;
+        }
+        span{
+            font-size: 15px;
+            color:#8797ae;
+            opacity: 0.75;
+        }
+        #lh{
+            ul{
+                li{
+                    list-style: none;
+                    color:#8797ae;
+                    opacity: 0.75;
+                    border-bottom: 1px solid #6e7a8a69;
+                    a{
+                        list-style: none;
+                        color:#8797ae;
+                        opacity: 0.75;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        transition: ease-in 0.25s;
+                        -moz-transition: ease-in 0.25s;
+                        -webkit-transition: ease-in 0.25s;
+                        color:#32c5d2;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
