@@ -297,7 +297,16 @@ body{
         padding: 5px;
         border: 1px solid #1f272eee;
     }
-    
+    #napthe{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid #1f272eee;
+        text-align: center;
+        
+    }
     // form login
     .form-login-reg{
         clear: both;
@@ -540,5 +549,6 @@ body{
                 margin-bottom: 10px;
             }
         }
+        
     }
 }

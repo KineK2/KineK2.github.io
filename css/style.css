@@ -341,6 +341,16 @@ body .dieukhoan {
   border: 1px solid #1f272eee;
 }
 
+body #napthe {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #1f272eee;
+  text-align: center;
+}
+
 body .form-login-reg {
   clear: both;
   margin-left: 50%;
