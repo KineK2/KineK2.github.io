@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./font-awesome/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    
+
     <div class="header">
         <div id="contact">
             <div id="contact-01">
@@ -79,26 +82,23 @@
         <h4>ĐĂNG KÝ</h4>
         <form method="post">
             <div class="txt_field">
-                <input type="text" required>
+                <input id="user" type="text">
                 <span></span>
                 <label>Tài khoản</label>
             </div>
             <div class="txt_field">
-                <input type="password" required>
+                <input id="pass" type="password">
                 <span></span>
                 <label>Mật khẩu</label>
             </div>
             <div class="txt_field">
-                <input type="password" required>
+                <input id="repass" type="password">
                 <span></span>
                 <label>Xác nhận mật khẩu</label>
             </div>
 
-            <div>
-                <input type="submit" value="Đăng Ký">
-            </div>
-            <div style="margin-top: 10px; margin-bottom: 20px;">
-                <input type="submit" value="Đăng Nhập">
+            <div style="margin-bottom: 20px;">
+                <input type="button" value="Đăng Ký" onclick="reg()">
             </div>
         </div>
     </div>
@@ -158,6 +158,29 @@
         </div>
     </div>
     <!-- js -->
+    <script>
+        var user = document.getElementById("user");
+        var pass =document.getElementById("pass");
+        var repass =document.getElementById("repass");
+       function reg(){
+           if(user.value == ""){
+               alert("Bạn đã nhập thiếu user!");
+               user.focus();
+           }
+           else if(pass.value == ""){
+               alert("Bạn đã nhập thiếu pass!");
+               pass.focus();
+           }
+           else if(repass.value == ""){
+               alert("Bạn đã nhập thiếu repass!");
+               repass.focus();
+           }
+           else if(pass.value != repass.value)
+                alert("Nhập lại mật khẩu không trùng nhau!");
+           else
+                alert("Bạn đã đăng ký tài khoản thành công!!! vui lòng quay lại đăng nhập.");
+       }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -396,6 +396,25 @@ body{
                 color: white;
                 transition: .5s;
             }
+            input[type="button"]{
+                width: 100%;
+                height: 50px;
+                border: 1px solid;
+                background: white;
+                border-radius: 25px;
+                border: 1px solid #1f272eee;
+                font-size: 18px;
+                color: #333;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;
+            }
+            input[type="button"]:hover{
+                border-color: #1f272eee;
+                background-color: #1f272eee;
+                color: white;
+                transition: .5s;
+            }
             .signup_link{
                 margin: 30px 0;
                 text-align: center;
@@ -436,6 +455,80 @@ body{
                     text-decoration: none;
                     color: white;
                 }
+            }
+        }
+        .view{
+            visibility: hidden;
+            
+        }
+        #view-acc-with-id{
+            .acc{
+                display: inline-block;
+                clear:both;
+                margin-right: 15px;
+                width: 350px;
+                height: 200px;
+                margin: 25px;
+                
+                overflow: hidden;
+                .img-acc{
+                    position: absolute;
+                    width: 350px;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+                .introduce-acc{
+                    width: 350px;
+                    height: 200px;
+                    position: absolute;
+                    border-radius: 5px;
+                    background-color: #1f272eee;
+                    opacity: 0;
+                    transition: 0.5s;
+                    span{
+                        color: white;
+                        font-size: medium;
+                        padding: 20px;
+                        
+                    }
+                    .gia-acc{
+                        float: left;
+                        font-size: small;
+                        align-items: center;
+                    }
+                    .thanhtoan-xemthem{
+                        .btn{
+                            width: 150px;
+                            padding: 5px 0px;
+                            font-size: small;
+                            border-radius: 5px;
+                            border: 1px solid #f1f1f1;
+                            color: white;
+                            background-color: none;
+                            a{
+                                color: white;  
+                                display: block;
+                            }
+                            
+                        }
+                        .btn:hover{
+                            border: 1px solid #f1f1f1;
+                            background-color: white;
+                            a{
+                                text-decoration: none;
+                                color: #1f272eee;
+                            }
+                        }
+                    }
+                }
+            }
+            .acc:hover .introduce-acc{  
+                opacity: 1;
+                box-shadow: 0 0 5px #1f272eee;
             }
         }
         #list-acc{
@@ -551,4 +644,5 @@ body{
         }
         
     }
+
 }

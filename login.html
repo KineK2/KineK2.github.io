@@ -75,11 +75,17 @@
         </ul>
     </div>
 
+    <script>
+       
+        function send(){
+            alert("hệ thống tạm thời lỗi!")
+        }
+    </script>
     <div class="form-login-reg">
         <h4>ĐĂNG NHẬP</h4>
         <form method="post">
-          <div class="txt_field">
-            <input type="text" required>
+          <div class="txt_field" >
+            <input type="text" id="user" required>
             <span></span>
             <label>Tài khoản</label>
           </div>
@@ -89,7 +95,7 @@
             <label>Mật khẩu</label>
           </div>
           <div class="pass">Quên mật khẩu?</div>
-          <input type="submit" value="Đăng nhập">
+          <input type="submit" value="Đăng nhập"  onclick="send()">
           <div class="signup_link">
             không có tài khoản? <a href="./dangky.html">Đăng Ký</a>
           </div>

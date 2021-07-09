@@ -86,11 +86,14 @@
 
     <div id="container-lmht">
         <div id="control-acc">
-            <input style="height: 32px;" type="text" value="tìm kiếm theo id">
-            <button class = "btn"><a>Tìm Kiếm</a></button>
+            <input style="height: 32px;" type="text" id="id-search" placeholder="Tìm kiếm theo id">
+            <button class = "btn" onclick="search()"><a>Tìm Kiếm</a></button>
+        </div>
+        <div class="view" id="view-acc-with-id">
+
         </div>
         <div id="list-acc"> 
-            <div class="acc">
+            <div class="acc" id="1">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-08121ba8-ed25-4178-a46c-fe4dc607e858.jpeg" alt="">
                 </div>
@@ -111,7 +114,7 @@
                 </div>
             </div>    
          
-            <div class="acc">
+            <div class="acc"id="2">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-12c948f1-fda6-4719-bcae-acca7630394b.jpeg" alt="">
                 </div>
@@ -133,7 +136,7 @@
             </div>  
 
 
-            <div class="acc">
+            <div class="acc" id="3">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-28b01f12-d27a-4025-b096-d63b3cc6fc1f.jpeg" alt="">
                 </div>
@@ -155,8 +158,8 @@
             </div>  
 
 
-            <div class="acc">
-                <div class="img-acc">
+            <div class="acc" id="4">
+                <div class="img-acc" >
                     <img src="./images/acc/lmht/image-4498731e-f48e-4d07-9d2b-61932a48fdd0.jpeg" alt="">
                 </div>
                 <div class="introduce-acc">
@@ -176,7 +179,7 @@
                 </div>
             </div>  
 
-            <div class="acc">
+            <div class="acc" id="5">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-4547479e-52fb-4c99-a3ef-60d15462b5a8.jpeg" alt="">
                 </div>
@@ -197,7 +200,7 @@
                 </div>
             </div> 
             
-            <div class="acc">
+            <div class="acc" id="6">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-92461e68-cb61-45c7-90b4-1d3369cc304f.jpeg" alt="">
                 </div>
@@ -218,7 +221,7 @@
                 </div>
             </div>  
 
-            <div class="acc">
+            <div class="acc" id="7">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-a772fbb1-07cb-4d8a-b769-e735e4e23007.jpeg" alt="">
                 </div>
@@ -238,7 +241,7 @@
                     </div>
                 </div>
             </div>
-            <div class="acc">
+            <div class="acc" id="8">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-4498731e-f48e-4d07-9d2b-61932a48fdd0.jpeg" alt="">
                 </div>
@@ -259,7 +262,7 @@
                 </div>
             </div> 
             
-            <div class="acc">
+            <div class="acc" id="9">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/image-f341b8a0-e558-42b7-84fc-2007b8b46ba8.jpeg" alt="">
                 </div>
@@ -280,7 +283,7 @@
                 </div>
             </div>  
 
-            <div class="acc">
+            <div class="acc" id="10">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/10.jpeg" alt="">
                 </div>
@@ -300,7 +303,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="acc">
+            <div class="acc"id="11">
                 <div class="img-acc">
                     <img src="./images/acc/lmht/11.jpeg" alt="">
                 </div>
@@ -320,8 +323,8 @@
                     </div>
                 </div>
             </div>  
-            <div class="acc">
-                <div class="img-acc">
+            <div class="acc"id="12">
+                <div class="img-acc" >
                     <img src="./images/acc/lmht/12.jpeg" alt="">
                 </div>
                 <div class="introduce-acc">
@@ -402,5 +405,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
+
 </body>
 </html>
